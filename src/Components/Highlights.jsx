@@ -45,7 +45,7 @@ function Highlights() {
       id="highlights"
       className="overflow-hidden bg-[#eeeeee] px-5 py-16 text-[#292929] sm:px-8 md:px-12 md:py-20 lg:px-16 lg:py-24"
     >
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-375">
 
         <div
           className={`mb-10 flex flex-wrap items-center justify-between gap-6 transition-all duration-700 ${
@@ -80,7 +80,7 @@ function Highlights() {
               <div
                 key={feature.title}
                 style={{ transitionDelay: `${index * 150}ms` }}
-                className={`group relative flex min-h-[290px] flex-col justify-between overflow-hidden border border-white/50 bg-[#e9e4e1] p-7 transition-all duration-700 ease-out hover:-translate-y-2 hover:border-[#e65b3b]/30 hover:bg-[#f0e9e5] hover:shadow-xl sm:min-h-[310px] md:p-9 ${
+                className={`group relative flex min-h-72.5 flex-col justify-between overflow-hidden border border-white/50 bg-[#e9e4e1] p-7 transition-all duration-700 ease-out hover:-translate-y-2 hover:border-[#e65b3b]/30 hover:bg-[#f0e9e5] hover:shadow-xl sm:min-h-77.5 md:p-9 ${
                   visible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-12 opacity-0"

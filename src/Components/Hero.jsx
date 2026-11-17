@@ -406,13 +406,12 @@ function Hero() {
 
       </div>
 
-     
-{/* Book a Consultation Card */}
+      {/* Book a Consultation Card */}
 
-<div
-  className="
-    absolute
-    bottom-6
+      <div
+        className="
+          absolute
+          -bottom-8
     left-1/2
     z-30
     flex
@@ -426,18 +425,16 @@ function Hero() {
     border
     border-white/30
     bg-black/50
-    shadow-xl
-    backdrop-blur-sm
 
-    md:-bottom-13.75
+    md:-bottom-17.5
     md:left-auto
-    md:right-[3%]
+    md:right-[0%]
     md:h-auto
-    md:w-37.5
+    md:w-61.25
     md:max-w-none
     md:translate-x-0
     md:flex-col
-    md:items-start
+    md:items-center
     md:overflow-visible
     md:border-0
     md:bg-transparent
@@ -452,17 +449,15 @@ function Hero() {
     alt="Real estate consultant"
     className="
       order-1
-      my-auto
-      h-12.5
-      w-12.5
+      h-16.25
+      w-16.25
       shrink-0
       object-cover
       object-top
 
       md:order-2
-      md:my-0
-      md:h-28.75
-      md:w-21.25
+      md:h-35.75
+      md:w-26.5
       md:self-center
     "
   />
@@ -473,19 +468,15 @@ function Hero() {
     href="#contact"
     className="
       order-2
-      mx-0
       my-auto
       flex
-      h-10
-      min-h-0
+      h-13
       flex-1
-      self-center
       items-center
       justify-center
       gap-2
       bg-[#e95b3e]
       px-2
-      py-0
       text-center
       text-[10px]
       font-semibold
@@ -497,10 +488,9 @@ function Hero() {
 
       md:order-1
       md:my-0
-      md:h-10.5
+      md:h-13
       md:w-full
       md:flex-none
-      md:self-auto
     "
   >
     <Phone size={13} className="shrink-0" />
@@ -509,8 +499,9 @@ function Hero() {
       Book a Consultation
     </span>
   </a>
-
 </div>
+
+
 
     </section>
   );

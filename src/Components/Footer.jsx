@@ -19,37 +19,27 @@ import {
 function Footer() {
   const handleSubscribe = (e) => {
     e.preventDefault();
-
     alert("Thank you for subscribing!");
-
     e.target.reset();
   };
 
   return (
     <footer className="bg-gray-950 text-gray-300">
-
-      {/* Main Footer */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
-
-        {/* Brand Section */}
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="mb-5 flex items-center gap-2">
             <Home size={30} className="text-orange-500" />
-
             <h2 className="text-2xl font-bold tracking-wide text-white">
               BRICKLINE
             </h2>
           </div>
 
           <p className="mb-6 text-sm leading-7 text-gray-400">
-            Building better spaces and creating beautiful places
-            for modern living. We turn your dream properties
-            into reality.
+            Building better spaces and creating beautiful places for modern
+            living. We turn your dream properties into reality.
           </p>
 
-          {/* Social Media Links */}
           <div className="flex items-center gap-4">
-
             <a
               href="https://www.instagram.com/"
               target="_blank"
@@ -99,15 +89,11 @@ function Footer() {
             >
               <FaYoutube />
             </a>
-
           </div>
         </div>
 
-        {/* Quick Links */}
         <div>
-          <h3 className="mb-6 text-lg font-semibold text-white">
-            Quick Links
-          </h3>
+          <h3 className="mb-6 text-lg font-semibold text-white">Quick Links</h3>
 
           <ul className="space-y-4 text-sm">
             {[
@@ -130,45 +116,15 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Our Services */}
-        <div>
-          <h3 className="mb-6 text-lg font-semibold text-white">
-            Our Services
-          </h3>
+ 
 
-          <ul className="space-y-4 text-sm">
-            {[
-              "Residential Properties",
-              "Commercial Properties",
-              "Property Development",
-              "Interior Design",
-              "Real Estate Consulting",
-            ].map((service) => (
-              <li key={service}>
-                <a
-                  href="#services"
-                  className="transition duration-300 hover:text-orange-500"
-                >
-                  {service}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
 
-        {/* Contact Section */}
         <div>
-          <h3 className="mb-6 text-lg font-semibold text-white">
-            Contact Us
-          </h3>
+          <h3 className="mb-6 text-lg font-semibold text-white">Contact Us</h3>
 
           <ul className="space-y-5 text-sm">
-
             <li className="flex items-start gap-3">
-              <MapPin
-                size={19}
-                className="shrink-0 text-orange-500"
-              />
+              <MapPin size={19} className="shrink-0 text-orange-500" />
               <span>
                 Your Office Address,
                 <br />
@@ -195,17 +151,12 @@ function Footer() {
                 info@brickline.com
               </a>
             </li>
-
           </ul>
         </div>
-
       </div>
 
-      {/* Newsletter Section */}
       <div className="border-t border-gray-800">
-
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-10 md:flex-row">
-
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-5 md:flex-row">
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">
               Subscribe to Our Newsletter
@@ -216,10 +167,7 @@ function Footer() {
             </p>
           </div>
 
-          <form
-            onSubmit={handleSubscribe}
-            className="flex w-full max-w-md"
-          >
+          <form onSubmit={handleSubscribe} className="flex w-full max-w-md">
             <input
               type="email"
               placeholder="Enter your email"
@@ -235,43 +183,30 @@ function Footer() {
               <ArrowUpRight size={17} />
             </button>
           </form>
-
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="border-t border-gray-800">
-
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-center text-sm text-gray-500 md:flex-row">
-
-          <p>
-            © {new Date().getFullYear()} BRICKLINE. All Rights Reserved.
-          </p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-3 text-center text-sm text-gray-500 md:flex-row">
+          <p>© {new Date().getFullYear()} BRICKLINE. All Rights Reserved.</p>
 
           <div className="flex gap-6">
-            <a
-              href="#privacy"
-              className="transition hover:text-orange-500"
-            >
+            <a href="#privacy" className="transition hover:text-orange-500">
               Privacy Policy
             </a>
 
-            <a
-              href="#terms"
-              className="transition hover:text-orange-500"
-            >
+            <a href="#terms" className="transition hover:text-orange-500">
               Terms & Conditions
             </a>
           </div>
-
         </div>
       </div>
-
     </footer>
   );
 }
 
 export default Footer;
+
 
 
 
