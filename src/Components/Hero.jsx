@@ -406,12 +406,12 @@ function Hero() {
 
       </div>
 
-      {/* Book a Consultation Card */}
+{/* Book a Consultation Card */}
 
-      <div
-        className="
-          absolute
-          -bottom-8
+<div
+  className="
+    absolute
+    -bottom-8
     left-1/2
     z-30
     flex
@@ -422,9 +422,9 @@ function Hero() {
     items-center
     gap-0
     overflow-hidden
-    border
-    border-white/30
-    bg-black/50
+    border-0
+    bg-transparent
+    shadow-none
 
     md:-bottom-17.5
     md:left-auto
@@ -436,14 +436,9 @@ function Hero() {
     md:flex-col
     md:items-center
     md:overflow-visible
-    md:border-0
-    md:bg-transparent
-    md:shadow-none
-    md:backdrop-blur-none
   "
 >
   {/* Consultant Image */}
-
   <img
     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=85"
     alt="Real estate consultant"
@@ -454,6 +449,7 @@ function Hero() {
       shrink-0
       object-cover
       object-top
+      shadow-none
 
       md:order-2
       md:h-35.75
@@ -463,7 +459,6 @@ function Hero() {
   />
 
   {/* Consultation Button */}
-
   <a
     href="#contact"
     className="
@@ -482,6 +477,7 @@ function Hero() {
       font-semibold
       tracking-wide
       text-white
+      shadow-none
       transition-all
       duration-300
       hover:bg-orange-700
@@ -494,7 +490,6 @@ function Hero() {
     "
   >
     <Phone size={13} className="shrink-0" />
-
     <span className="whitespace-nowrap">
       Book a Consultation
     </span>
